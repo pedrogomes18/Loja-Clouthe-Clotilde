@@ -1,4 +1,4 @@
-# Loja-Clouthe-Clotilde
+# Loja de Moda Feminina - Clouthe Clotilde
 Loja de roupas Clouthe Clotilde - Utilizado API do banco de dados. Prj efetivado em HTML/CSS e JavaScript Puro
 
 Site de Moda Feminina. Cores escolhidas a dedo pelo desenolvedor.
