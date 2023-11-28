@@ -1,0 +1,482 @@
+main{
+    width: 85% !important;
+    height: auto !important;
+    margin: 0 auto;
+    background-color: transparent  !important;
+
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    transition: background-color 1s ease-out;
+    z-index: 200;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.rolagemMenu{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    overflow: hidden;
+    background-color:white !important;
+    z-index: 200;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+header > nav{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+header > nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+header > nav li{
+    list-style-type: none;
+}
+
+header > nav li img{
+    width: 15%;
+}
+
+header > nav li{
+    cursor: pointer;
+}
+
+header > nav li button{
+    border-radius: 35px;
+    outline: none;
+    transition: all .8s ease-in-out;
+}
+
+header > nav li button:hover,
+header > nav li button:focus,
+header > nav li button:focus-visible{
+    background-color: var(--amarelo);
+}
+
+header > nav button img{
+    width: 90%;
+}
+
+.conteiner{
+    margin: 5px auto;
+    height: 100vh;
+}
+
+.informacoesGerais{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items:start;
+}
+
+.image > div{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 20px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.image img{
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.image > div .size{
+    border: 1px solid #474747;
+    border-radius: 30px;
+    color: #474747;
+    margin-left: 10px;
+    background-color: transparent;
+    padding: 20px 24px;
+    outline: none;
+    transition: all .3s ease;
+}
+
+.checado {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+
+.image > div .size:focus,
+.image > div .size:hover,
+.image > div .size:focus-visible{
+    color: black;
+    outline: 1px solid var(--roxo);
+}
+
+
+.descricao{
+    padding: 20px 35px;
+}
+
+.descricao h2{
+    font-size: 28px;
+    color: #474747;
+}
+
+.descricao h3{
+    font-size: 22px;
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+
+.descricao h4{
+    font-size: 20px;
+    margin: 20px 0;
+    
+}
+
+.descricao h4 p span#priceOriginal{
+    text-decoration: line-through;
+    color: #d9534f
+    
+}
+.descricao h4 p span#priceDiscount{
+    color: #666666;
+}
+
+.spin {
+    pointer-events: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 3px solid transparent;
+    border-top-color: #fff;
+    animation: spin .8s linear infinite; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.carrinho {
+    background-color: #d7cfcf !important;
+    width: 25% !important;
+    padding: 10px !important;
+    margin: 0 10px;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+}
+
+
+
+.carrinhoPosition{
+    display: flex;
+    width: 40%;
+    height: auto;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: end;
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+}
+
+#cart{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 40%;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    padding: 10px;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;    
+}
+
+.carrinhoBox.activeCarrinho {
+    opacity: 1;
+    display: block;
+    z-index: 100;
+}
+
+.carrinhoBox.activeCarrinho .ComprarCarrinho{
+    cursor: pointer !important;
+}
+
+.carrinhoBox{
+    display: flex;
+    opacity: 0;
+    display: none;
+    width: 80%;
+    max-height: 480px;
+    overflow-y: scroll;
+    z-index: -1000;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: opacity .9s ease-in-out;
+}
+
+.cardCarrinho{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: safe;
+    border: 1px solid #ccc;
+    padding: 15px 25px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.imgCarrinho img{
+    width: 105px;
+    height: 105px;
+    border-radius: 7px;
+}
+
+
+.descricaoCarrinho > h4{
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+.descricaoCarrinho > h3{
+    font-size: 18px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.descricaoCarrinho p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.descricaoCarrinho span {
+    font-weight: bold;
+    color: var(--roxo);
+}
+
+button.ComprarCarrinho {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+    cursor: default !important;
+    background-color: var(--intermediario);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.ComprarCarrinho:hover {
+    background-color: var(--roxo);
+}
+
+.cart-icon {
+    font-size: 24px;
+}
+
+.cart-count {
+    background-color: white;
+    color: #504e4e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+
+
+.sucess {
+    background-color:#4CAF50 !important;
+    color: aliceblue;
+}
+
+.sucess:hover {
+    background-color: #45a049;
+}
+
+.sucess.disabled,
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+
+
+/*=====MODAL=====*/
+
+.conteiner {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    height: auto;
+}
+  
+.valor{
+    margin: 5px 0;
+    padding: 5px 6px;
+}
+  
+.valor h3{
+    font-size: 18px;
+    margin: 7px 0;
+}
+  
+.valor h5{
+    background-color: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+    color: transparent;
+}
+  
+.valor h4{
+    font-size: 18px;
+}
+.valor h4 span{
+    font-size: 24px;
+    color: #ff9900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+  
+.conteiner form{
+  padding: 5px 5px;
+}
+  
+.conteiner label {
+    font-weight: bold;
+}
+  
+.conteiner input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: outline 1s ease-in ;
+}
+  
+.conteiner input:hover,
+.conteiner input:focus,
+.conteiner input:focus-visible{
+    outline: 2px solid var(--roxo)
+}
+  
+.conteiner button {
+    background-color: var(--roxo);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    opacity: .8;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: opacity .6s ease-in-out;
+}
+  
+.conteiner button:hover,
+.conteiner button:focus,
+.conteiner button:focus-visible{
+    opacity: 1;
+}
+
+
+.boxLoader{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--roxo);
+    z-index: 2000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boxLoader p{
+    font-size: 18px;
+    color: #FAFAFA;
+    
+}
+
+.loading-text {
+    font-size: 24px;
+    margin-top: 20px;
+    animation: pulseText 1.6s infinite;
+}
+
+@keyframes pulseText {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 1; }
+}
+
+.inside{
+    display: none;
+}
+
+.loader {
+    border: 1px solid #fafafa;
+    border-top: 3px solid var(--amarelo); 
+    border-radius: 50%;
+    width: 80px;
+    margin: 20px 0;
+    height: 80px;
+    animation: spin .5s linear infinite; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+

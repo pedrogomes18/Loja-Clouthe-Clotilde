@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NUSP14616225">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Clouthe Clotilde - Moda Feminina</title>
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+        crossorigin="anonymous"
+    >
+</head>
+<body id="body">
+    <div class="boxLoader">
+        <div class="loader"></div>
+        <p class="loading-text">Carregando</p>
+    </div>
+    <div class="inside">
+        <section id="master">
+            <figure class="img">
+                    <img src="./assets/img/index/model.png" alt="Modelo" >
+            </figure>
+            <div class="content">
+                <nav id="header">
+                    <div class="nav justify-content-end">
+                        <button type="button" class="nav-link" id="toggleButton">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+                    
+                    <ul class="nav justify-content-end" id="menu">
+
+                        <li class="nav-item" data-valor="todos">
+                            <a class="nav-link" href="">
+                                <img src="./assets/img/icons/roupas-limpas.png" alt="Roupas Limpas">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item" data-valor="verão">
+                            <a class="nav-link" href="#cards">
+                                <img src="./assets/img/icons/sol.png" alt="Sol">
+                                Verão
+                            </a>
+                        </li>
+                        <li class="nav-item" data-valor="primavera">
+                            <a class="nav-link" href="#cards">
+                                <img src="./assets/img/icons/flor.png" alt="Flor">
+                                Primavera
+                            </a>
+                        </li>
+                        <li class="nav-item"data-valor="outono" >
+                            <a class="nav-link" href="#cards">
+                                <img src="./assets/img/icons/folhas.png" alt="Folhas">
+                                Outono
+                            </a>
+                        </li>
+                        <li class="nav-item" data-valor="inverno">
+                            <a class="nav-link" href="#cards">
+                                <img src="./assets/img/icons/outono.png" alt="Outono">
+                                Inverno
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <figure>
+                    <img src="./assets/img/index/Logotipo.png" alt="Logotipo">
+                </figure>
+            </div>
+        </section>
+    
+        
+        <main>
+            <div class="container">
+                <section class="about">
+                    <div>
+                        <h2 id="titleAbout"></h2><br>
+                        <h3 id="text"></h3>
+                        <a  id="linkAbout"></a>
+                    </div>
+                </section>
+        
+                
+                <section class="conteiner">
+                    <input type="text" id="search" placeholder="Pesquise aqui">
+                    <h3 id="resultado"></h3>
+                    <div class="cards" id="cards"></div>
+                </section>
+            </div>
+        </main>
+
+        <div class="carrinhoPosition">
+            <div class="carrinhoBox" id="containerCart">
+                <button type="button" class="ComprarCarrinho" id="comprarCarrinho" disabled>Comprar</button>
+            </div>
+            <button id="cart">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+        </div>
+
+    
+        
+        <div id="toastbox"></div>
+    
+    
+        <footer class="rodape">
+            <div class="informacoes">
+                <div class="linksrapidos">
+                    <div class="lista">
+                        <h2>Contate-nos</h2>
+                        <ul>
+                            <li><a href="">CEP 01001-000</a></li>
+                            <li><a href="">Rua dos bobos, Nº0</a></li>
+                            <li><a href="">+55(11)9999-88888</a></li>
+                            <li><a href="sobre.html#contato">CloutheClotilde@gmail.com</a></li>   
+                        </ul>
+                    </div>
+    
+                     <div class="lista">
+                        <h2>Temporada</h2>
+                        <ul>
+                            <li><a href="">Verão</a></li>
+                            <li><a href="">Inverno</a></li>
+                            <li><a href="">Outono</a></li>
+                            <li><a href="">Primavera</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="siganos">
+                    
+                    <h3>Sociais</h3>
+                    <div>
+                        <div class="icone">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-2xl"></i>
+                            </a>
+                        </div>
+                        <div class="icone">
+                            <a href="https://twitter.com/login?lang=pt" target="_blank">
+                                <i class="fa-brands fa-twitter fa-2xl"></i>
+                            </a>
+                        </div>
+                        <div class="icone">
+                            <a href="https://pt-br.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook fa-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        <div class="copyRight">
+            <p>Clouthe Clotilde - <span>&copy;</span> - Todos os direitos reservados</p>
+        </div>  
+    </div>
+    
+    <!--JS-->
+    <script src="https://kit.fontawesome.com/28f3560693.js" 
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/libs/vanillaTilt.js"></script>
+</body>
+</html>
